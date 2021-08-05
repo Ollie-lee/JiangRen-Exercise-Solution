@@ -104,7 +104,6 @@ def add_company():
 def list_tut():
     # Grab a list of tutors from database.
     tutors = Tutor.query.all()
-    print(tutors)
     return render_template('list.html', tutors=tutors)
 
 
